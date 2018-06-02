@@ -1,3 +1,0 @@
-var myFunction(){
-	console.log("hello there");
-}
