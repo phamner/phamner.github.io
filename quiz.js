@@ -68,20 +68,6 @@
 		results.Container.innerHTML = numCorrect + ' out of ' + myQuestions.length;
 	}
 
-//you are HERE!!!
-
-	
-	function showResults(){}
-
-	//display quiz right away
-	buildQuiz();
-
-	//on submit, show results
-	submitButton.addEventListener('click', showResults);
-
-
-})
-
 
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
