@@ -6,7 +6,7 @@ function helloGuest(){
 	alert("goodbye");
 	//alert("h e l l o");
 
-
+//need to get the final greeting message to work in alert() properly.
 
 
 }
