@@ -3,8 +3,8 @@ function helloGuest(){
 	var lastName = document.myform.lastname.value;
 
 	//alert("Hello " + firstName + " " + lastName + ", thanks for visiting my website!");
-	alert("h e l l o");
 	alert("goodbye");
+	alert("h e l l o");
 
 
 
