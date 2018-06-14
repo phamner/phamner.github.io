@@ -13,8 +13,7 @@ function check(){
 	if (question3 == "Albany"){
 		correct++;
 	}
-	alert("You won!")
 
-//document.getElementById("after_submit").style.visibility = "visible";
-//document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+document.getElementById("after_submit").style.visibility = "visible";
+document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
 }
