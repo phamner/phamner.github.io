@@ -4,6 +4,7 @@ function helloGuest(){
 
 	//alert("Hello " + firstName + " " + lastName + ", thanks for visiting my website!");
 	alert("h e l l o");
+	alert("goodbye");
 
 
 
