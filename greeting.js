@@ -1,5 +1,5 @@
 function helloGuest(){
 
-	alert("Hello ");
+	alert("Hello");
 
 }
