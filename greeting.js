@@ -1,9 +1,5 @@
 function helloGuest(){
-	alert("Hello ");
 
-
-
-	//alert("Hello " + firstname + " " + lastname);
-	//alert("you got " + count + " answers correct!");
+	alert("Hello " + firstname + " " + lastname + ", thanks for coming to my website :)");
 
 }
