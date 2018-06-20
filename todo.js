@@ -1,3 +1,5 @@
+
+//create a new list item when clicking the 'add' button
 function newElement(){
 	const li = document.createElement("li");
 	const inputValue = document.getElementById("myInput").value;
