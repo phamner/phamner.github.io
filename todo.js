@@ -10,4 +10,5 @@ function newElement(){
 	else{
 		document.getElementById("myUL").appendChild(li);
 	}
+	document.getElementById("myInput").value = "";
 }
