@@ -14,3 +14,12 @@ function newElement(){
 	}
 	document.getElementById("myInput").value = "";
 }
+
+//add checks next to items that are completed
+const list = document.querySelector('ul');
+list.addEventListener('click', function(ev){
+	if (ev.target.tagName === 'LI'){
+		ev.target.classList.toggle('checked');
+	}
+
+}, false);
