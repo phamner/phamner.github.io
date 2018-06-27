@@ -24,7 +24,7 @@ for (i = 0; i < myNodeList.length; i++){
 	const span = document.createElement("SPAN");
 	const txt = document.createTextNode("X");
 	span.className = "close";
-	span.appendChile(txt);
+	span.appendChild(txt);
 	myNodeList[i].appendChild(span);
 }
 
