@@ -18,15 +18,15 @@ function newElement(){
 
 
 //create a 'close' button and append it to each list item
-// const myNodeList = document.getElementByTageName("LI");
-// const i;
-// for (i = 0; i < myNodeList.length; i++){
-// 	const span = document.createElement("SPAN");
-// 	const txt = document.createTextNode("X");
-// 	span.className = "close";
-// 	span.appendChild(txt);
-// 	myNodeList[i].appendChild(span);
-// }
+const myNodeList = document.getElementByTagName("LI");
+const i;
+for (i = 0; i < myNodeList.length; i++){
+	const span = document.createElement("SPAN");
+	const txt = document.createTextNode("X");
+	span.className = "close";
+	span.appendChild(txt);
+	myNodeList[i].appendChild(span);
+}
 
 
 
