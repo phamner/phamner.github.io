@@ -22,11 +22,24 @@ const myNodeList = document.getElementsByTagName("LI");
 const i;
 for (i = 0; i < myNodeList.length; i++){
 	const span = document.createElement("SPAN");
-	const txt = document.createTextNode("X");
+	const txt = document.createTextNode("\u00D7");
 	span.className = "close";
 	span.appendChild(txt);
 	myNodeList[i].appendChild(span);
 }
+
+// const myNodelist = document.getElementsByTagName("LI");
+// var i;
+// for (i = 0; i < myNodelist.length; i++) {
+//   const span = document.createElement("SPAN");
+//   const txt = document.createTextNode("\u00D7");
+//   span.className = "close";
+//   span.appendChild(txt);
+//   myNodelist[i].appendChild(span);
+// }
+
+
+
 
 
 
