@@ -18,7 +18,7 @@ function newElement(){
 
 
 //create a 'close' button and append it to each list item
-const myNodeList = document.getElementByTagName("LI");
+const myNodeList = document.getElementsByTagName("LI");
 const i;
 for (i = 0; i < myNodeList.length; i++){
 	const span = document.createElement("SPAN");
