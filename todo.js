@@ -19,12 +19,11 @@ function newElement(){
 
 //create a 'close' button and append it to each list item
 const myNodeList = document.getElementByTageName("LI");
-const i;
-for (i = 0; i < myNodeList.length; i++){
+for (var i = 0; i < myNodeList.length; i++){
 	const span = document.createElement("SPAN");
-	const txt = document.createTextNode("X");
+	const txt = document.createTextNode("\u00D7");
 	span.className = "close";
-	span.appendChild(txt);
+	span.appendChile(txt);
 	myNodeList[i].appendChild(span);
 }
 
