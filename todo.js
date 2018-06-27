@@ -15,6 +15,25 @@ function newElement(){
 	document.getElementById("myInput").value = "";
 }
 
+
+
+//create a 'close' button and append it to each list item
+const myNodeList = document.getElementByTageName("LI");
+for (const i = 0; i < myNodeList.length; i++){
+	const span = document.createElement("SPAN");
+	const txt = document.createTextNode("\u00D7");
+	span.className = "close";
+	span.appendChile(txt);
+	myNodeList[i].appendChild(span);
+}
+
+
+
+
+
+
+
+
 //add checks next to items that are completed
 const list = document.querySelector('ul');
 list.addEventListener('click', function(ev){
