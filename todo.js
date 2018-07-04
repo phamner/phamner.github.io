@@ -6,6 +6,34 @@ function newElement(){
 	const t = document.createTextNode(inputValue);
 	li.appendChild(t);
 
+	// Adding close button to the todo item LI
+	var close = document.createElement("SPAN");
+	var txt = document.createTextNode(" X");
+	close.className = "close";
+	close.appendChild(txt);
+	li.appendChild(close);
+
+
+	// Adding close functionality to the 'X'
+	close.onclick = function(){
+		const div = this.parentElement;
+		div.remove();
+	}
+
+	//Adding 'cross out' functionality
+	li.onclick = function(){
+		console.log(window.getComputedStyle(li).getPropertyValue('text-decoration'))
+		if(window.getComputedStyle(li).getPropertyValue('text-decoration') === "line-through solid rgb(0, 0, 0)"){
+			li.style.cssText = "text-decoration: none";
+		}
+		else{
+			li.style.cssText = "text-decoration: line-through";
+		}
+	}
+
+
+
+
 	if (inputValue === ""){
 		alert("You must write something!")
 	}
@@ -15,28 +43,6 @@ function newElement(){
 	document.getElementById("myInput").value = "";
 }
 
-
-
-//create a 'close' button and append it to each list item
-const myNodeList = document.getElementsByTagName("LI");
-const i;
-for (i = 0; i < myNodeList.length; i++){
-	const span = document.createElement("SPAN");
-	const txt = document.createTextNode("\u00D7");
-	span.className = "close";
-	span.appendChild(txt);
-	myNodeList[i].appendChild(span);
-}
-
-//click on a close button to hide the current list item
-const close = document.getElementByClassName("close");
-const i;
-for (i = 0; i < close.length; i++){
-	close[i].onclick = function(){
-		const div = this.parentElement;
-		div.style.display = "none";
-	}
-}
 
 
 
